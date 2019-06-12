@@ -20,6 +20,6 @@ public class Bomb extends Thread {
         bomb.interrupt();
 
         System.out.println("Start again");
-        bomb.run();
+        bomb.start();
     }
 }
