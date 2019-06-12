@@ -15,7 +15,7 @@ public class CompetitiorList implements Iterable<Competitor> {
     public Iterator<Competitor> iterator() {
         return new Iterator<Competitor>() {
             private int i = 0;
-            private Competitor[] copy = Arrays.copyOf(list, list.length); //Doesn't have to be a copy
+            private Competitor[] copy = list;
 
             @Override
             public boolean hasNext() {
